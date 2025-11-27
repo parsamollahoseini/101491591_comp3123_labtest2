@@ -89,7 +89,7 @@ function WeatherDetails({ weatherData, forecastData }) {
                             <div key={index} className="forecast-item">
                                 <div className="forecast-day">{forecast.day}</div>
                                 <img
-                                    src={`http://openweathermap.org/img/wn/${forecast.icon}@2x.png`}
+                                    src={`https://openweathermap.org/img/wn/${forecast.icon}@2x.png`}
                                     alt={forecast.description}
                                     className="forecast-icon"
                                 />

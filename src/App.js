@@ -20,7 +20,7 @@ function App() {
     try {
       // Fetch current weather
       const weatherResponse = await fetch(
-          `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`
+          `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`
       );
 
       if (!weatherResponse.ok) {
@@ -32,7 +32,7 @@ function App() {
 
       // Fetch 5-day forecast
       const forecastResponse = await fetch(
-          `http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${API_KEY}&units=metric`
+          `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${API_KEY}&units=metric`
       );
 
       const forecast = await forecastResponse.json();

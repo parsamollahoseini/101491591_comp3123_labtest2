@@ -1,70 +1,172 @@
-# Getting Started with Create React App
+# Weather Forecast Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Student ID:** 101491591  
+**Course:** COMP3123 - Full Stack Development I  
+**Lab Test:** 2 (Week 13)
 
-## Available Scripts
+## 📱 Project Description
 
-In the project directory, you can run:
+A modern, responsive weather application built with React that displays current weather conditions and a 5-day forecast for any city worldwide. The app features a premium glassmorphism design with smooth animations and real-time data from the OpenWeatherMap API.
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Real-time Weather Data** - Current weather conditions for any city
+- **5-Day Forecast** - Extended weather predictions
+- **Dynamic Search** - Search weather by city name
+- **Comprehensive Weather Info** - Temperature, humidity, wind speed, pressure, visibility, feels like, and sunrise time
+- **Responsive Design** - Works seamlessly on desktop and mobile devices
+- **Premium UI/UX** - Modern glassmorphism design with smooth animations
+- **Weather Icons** - Dynamic weather condition icons from OpenWeatherMap
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technologies Used
 
-### `npm test`
+- **React.js** - Frontend framework
+- **JavaScript (ES6+)** - Programming language
+- **CSS3** - Styling with animations and glassmorphism effects
+- **OpenWeatherMap API** - Weather data provider
+- **Fetch API** - HTTP requests
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📡 API Used
 
-### `npm run build`
+**OpenWeatherMap API**
+- Current Weather Endpoint: `http://api.openweathermap.org/data/2.5/weather`
+- 5-Day Forecast Endpoint: `http://api.openweathermap.org/data/2.5/forecast`
+- Documentation: https://openweathermap.org/api
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Installation & Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+- Git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Steps
 
-### `npm run eject`
+1. **Clone the repository**
+```bash
+git clone https://github.com/YOUR_USERNAME/101491591_comp3123_labtest2.git
+cd 101491591_comp3123_labtest2
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Install dependencies**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Start the development server**
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Open in browser**
+```
+http://localhost:3000
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📁 Project Structure
+```
+101491591_comp3123_labtest2/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── SearchBar.js          # Search input component
+│   │   ├── WeatherCard.js        # Main weather display
+│   │   └── WeatherDetails.js     # Detailed info & forecast
+│   ├── App.js                    # Main application component
+│   ├── App.css                   # Application styling
+│   └── index.js                  # Entry point
+├── package.json
+└── README.md
+```
 
-## Learn More
+## 🎨 Design Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Glassmorphism Effects** - Frosted glass appearance with backdrop blur
+- **Animated Background** - Dynamic gradient with shifting colors
+- **Smooth Transitions** - Cubic bezier easing for professional feel
+- **Hover Effects** - Interactive elements with scale and translate
+- **Floating Animations** - Weather icon with gentle floating motion
+- **Responsive Layout** - Grid system adapts to screen sizes
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📸 Screenshots
 
-### Code Splitting
+### Main Weather Display
+![Main Display](screenshots/main-display.png)
+*Current weather with temperature, location, and condition*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Weather Details
+![Weather Details](screenshots/weather-details.png)
+*Comprehensive weather information grid*
 
-### Analyzing the Bundle Size
+### 5-Day Forecast
+![Forecast](screenshots/forecast.png)
+*Extended weather predictions*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Search Functionality
+![Search](screenshots/search.png)
+*Dynamic city search feature*
 
-### Making a Progressive Web App
+### Postman API Testing
+![Postman](screenshots/postman.png)
+*API endpoint testing in Postman*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🌐 Live Deployment
 
-### Advanced Configuration
+**Deployed on Vercel:** [Your Vercel URL will go here]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🔑 React Concepts Demonstrated
 
-### Deployment
+### State Management (useState)
+- Managing weather data
+- Handling loading states
+- Error state management
+- User input tracking
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Effects (useEffect)
+- Fetching data on component mount
+- API calls on search
 
-### `npm run build` fails to minify
+### Props
+- Passing weather data from parent to child components
+- Event handler props for search functionality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Component Composition
+- Modular component architecture
+- Reusable components
+
+## 📝 Assignment Requirements Checklist
+
+- [x] ReactJS application with correct naming convention
+- [x] Connected to GitHub repository
+- [x] Weather icons from OpenWeatherMap
+- [x] Custom UI/UX design
+- [x] Search/dynamic content feature
+- [x] Display all relevant weather information
+- [x] README.md with documentation
+- [x] Hosted on deployment platform
+- [x] Postman API testing
+- [x] Screenshots of all outputs
+
+## 🐛 Known Issues / Assumptions
+
+- API calls are limited to 60 per minute on free tier
+- Forecast data shows 5 days based on available API data
+- Temperature displayed in Celsius (metric system)
+- Times shown in local browser timezone
+
+## 👨‍💻 Author
+
+**Student ID:** 101491591  
+**Program:** Computer Science  
+**Institution:** George Brown College
+
+## 📄 License
+
+This project is created for educational purposes as part of COMP3123 coursework.
+
+## 🙏 Acknowledgments
+
+- OpenWeatherMap for providing free weather API
+- George Brown College - COMP3123 Course
+- React.js documentation and community
