@@ -95,10 +95,6 @@ http://localhost:3000
 ![Main Display](screenshots/main-display.png)
 *Current weather with temperature, location, and condition*
 
-### Weather Details
-![Weather Details](screenshots/weather-details.png)
-*Comprehensive weather information grid*
-
 ### 5-Day Forecast
 ![Forecast](screenshots/forecast.png)
 *Extended weather predictions*
@@ -113,7 +109,7 @@ http://localhost:3000
 
 ## 🌐 Live Deployment
 
-**Deployed on Vercel:** [Your Vercel URL will go here]
+**Deployed on Vercel:** https://101491591-comp3123-labtest2.vercel.app
 
 ## 🔑 React Concepts Demonstrated
 
